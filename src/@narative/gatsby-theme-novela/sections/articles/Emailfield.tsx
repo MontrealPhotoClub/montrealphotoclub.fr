@@ -41,7 +41,7 @@ const Emailfield: React.FunctionComponent<{}> = () => {
   return (
           <Form onSubmit={handleSubmit} hasError={error}>
             <Input
-              placeholder="your@email.com"
+              placeholder="votre@email.com"
               name="email"
               type="email"
               value={email}
@@ -54,7 +54,7 @@ const Emailfield: React.FunctionComponent<{}> = () => {
               subscribed={subscribed}
               disabled={subscribed}
             >
-              {subscribed ? <CheckMarkIcon /> : "Join now for free"}
+              {subscribed ? <CheckMarkIcon /> : "S'inscrire gratuitement"}
             </Button>
             {error && <Error dangerouslySetInnerHTML={{ __html: error }} />}
           </Form>

@@ -60,8 +60,8 @@ function ArticlesHero({ authors }: IAuthor) {
             onClick={() => setGridLayout("tiles")}
             active={tilesIsActive}
             data-a11y="false"
-            title="Show articles in Tile grid"
-            aria-label="Show articles in Tile grid"
+            title="Afficher les articles en grille"
+            aria-label="Afficher les articles en grille"
           >
             <Icons.Tiles />
           </GridButton>
@@ -69,8 +69,8 @@ function ArticlesHero({ authors }: IAuthor) {
             onClick={() => setGridLayout("rows")}
             active={!tilesIsActive}
             data-a11y="false"
-            title="Show articles in Row grid"
-            aria-label="Show articles in Row grid"
+            title="Afficher les articles en lignes"
+            aria-label="Afficher les articles en lignes"
           >
             <Icons.Rows />
           </GridButton>

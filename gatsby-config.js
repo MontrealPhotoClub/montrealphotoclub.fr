@@ -3,11 +3,11 @@ module.exports = {
     title: `Montréal Photo Club 📷`,
     name: `MontrealPhotoClub`,
     siteUrl: `https://montrealphoto.club`,
-    description: `A friendly gathering of photographers in Montréal from all horizons and skills.`,
+    description: `Un rassemblement amical de photographes Montréalais.e.s de tous niveaux et horizons.`,
     hero: {
-      heading: `We're a friendly gathering of photographers and we're hosting regular events in Montréal.`,
-      dontmiss: `Make sure you don't miss out our future events.`,
-      join: `Join now for free 👇`,
+      heading: `Nous sommes un rassemblement amical de photographes et nous organisons des événements régulièrement à Montréal.`,
+      dontmiss: `Ne ratez aucun événement à venir`,
+      join: `Inscrivez vous gratuitement 👇`,
       maxWidth: 1080,
     },
     social: [

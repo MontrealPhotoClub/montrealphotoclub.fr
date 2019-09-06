@@ -44,8 +44,8 @@ function NavigationHeader() {
         <LogoLink
           to="/"
           data-a11y="false"
-          title="Navigate back to the homepage"
-          aria-label="Navigate back to the homepage"
+          title="Retourner à la page d'accueil"
+          aria-label="Retourner à la page d'accueil"
           back={showBackArrow ? "true" : "false"}
         >
           {showBackArrow && (
@@ -54,20 +54,20 @@ function NavigationHeader() {
             </BackArrowIconContainer>
           )}
           <Logo fill={fill} />
-          <Hidden>Navigate back to the homepage</Hidden>
+          <Hidden>Retourner à la page d'accueil</Hidden>
         </LogoLink>
         <NavControls>
           {showBackArrow ? (
             <button
               onClick={() => navigate(previousPath)}
-              title="Navigate back to the homepage"
-              aria-label="Navigate back to the homepage"
+              title="Retourner à la page d'accueil"
+              aria-label="Retourner à la page d'accueil"
             >
               <Icons.Ex fill={fill} />
             </button>
           ) : (
             <>
-              <SwitchLanguage href="https://fr.montrealphoto.club" rel="noopener noreferrer" title="En français?"><FrenchIcon fill={fill} /></SwitchLanguage>
+              <SwitchLanguage href="https://montrealphoto.club" rel="noopener noreferrer" title="In English?"><EnglishIcon fill={fill} /></SwitchLanguage>
               <SharePageButton />
               <DarkModeToggle />
             </>
@@ -94,8 +94,8 @@ function DarkModeToggle() {
       isDark={isDark}
       onClick={toggleColorMode}
       data-a11y="false"
-      aria-label={isDark ? "Activate light mode" : "Activate dark mode"}
-      title={isDark ? "Activate light mode" : "Activate dark mode"}
+      aria-label={isDark ? "Activer le mode clair" : "Activer le mode sombre"}
+      title={isDark ? "Activer le mode clair" : "Activer le mode sombre"}
     >
       <MoonOrSun isDark={isDark} />
       <MoonMask isDark={isDark} />
@@ -125,8 +125,8 @@ function SharePageButton() {
       isDark={isDark}
       onClick={copyToClipboardOnClick}
       data-a11y="false"
-      aria-label="Copy URL to clipboard"
-      title="Copy URL to clipboard"
+      aria-label="Copier cette URL"
+      title="Copier cette URL"
     >
       <Icons.Link fill={fill} />
       <ToolTip isDark={isDark} hasCopied={hasCopied}>

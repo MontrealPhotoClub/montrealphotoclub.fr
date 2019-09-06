@@ -43,14 +43,14 @@ const Subscription: React.FunctionComponent<{}> = () => {
       <SubscriptionContainer>
         <Content>
           <Headings.h3>
-            Join the club
+            Rejoignez le club
           </Headings.h3>
           <Text>
-            Make sure you don't miss any future events and announcements.
+            Assurez vous de ne manquer aucun événement ou annonce.
           </Text>
           <Form onSubmit={handleSubmit} hasError={error}>
             <Input
-              placeholder="your@email.com"
+              placeholder="votre@email.com"
               name="email"
               type="email"
               value={email}
@@ -63,7 +63,7 @@ const Subscription: React.FunctionComponent<{}> = () => {
               subscribed={subscribed}
               disabled={subscribed}
             >
-              {subscribed ? <CheckMarkIcon /> : "Join now for free"}
+              {subscribed ? <CheckMarkIcon /> : "Rejoindre gratuitement"}
             </Button>
             {error && <Error dangerouslySetInnerHTML={{ __html: error }} />}
           </Form>
