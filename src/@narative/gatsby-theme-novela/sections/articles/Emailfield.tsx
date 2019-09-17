@@ -44,6 +44,7 @@ const Emailfield: React.FunctionComponent<{}> = () => {
               placeholder="votre@email.com"
               name="email"
               type="email"
+              aria-label="email"
               value={email}
               onChange={handleEmailChange}
               hasError={error}
